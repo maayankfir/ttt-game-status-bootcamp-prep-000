@@ -53,8 +53,9 @@ end
 end
 
 def winner(board)
-if win_combination == ["X","X","X"]
+if position_1 == "X" && position_2 == "X" && position_3 == "X"
   return "X won!"
-else "O won!"
+elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+  "O won!"
 end
 end
