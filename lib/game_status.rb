@@ -54,3 +54,4 @@ elsif !full?(board)
   false
 end
 end
+end
