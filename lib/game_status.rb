@@ -37,6 +37,11 @@ end
 def full?(board)
   board.all? do |i|
     i == "X"  || i == "O"
-
     end
   end
+
+def draw?(board)
+if (!won?(board) && board.all?)
+  return true
+end
+end
