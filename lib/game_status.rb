@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
- if WIN_COMBINATIONS.any? {|i| i == "X" || i == "O"}
+ if WIN_COMBINATIONS.any? {|i| i == ["X", "X", "X"] || i == ["O", "O", "O"]}
    return win_combination
  else
    false
