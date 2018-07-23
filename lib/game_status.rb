@@ -10,8 +10,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
- if WIN_COMBINATIONS.any? {|i| i == ["X","X","X"] || i == ["O","O","O"]}
-   return win_combination
+ if WIN_COMBINATIONS.select do |array|
+   array.any? { |array| array == ["X","X","X"] || array == ["O","O","O"]}
+   return "#{array}"
  else
    false
 end
